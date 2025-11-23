@@ -8,7 +8,7 @@ The test case generation process involves these key phases:
 
 1. **Context Gathering** - Read project documentation and reference materials
 2. **Input Verification** - Locate and validate the user story summary file
-3. **Place of storage of Output Verification** - Locate and validate place to output TestCase files
+3. **Output Storage Configuration** - Locate and validate place to output TestCase files
 4. **Analysis** - Map user story relationships and dependencies
 5. **Generation** - Create test cases per user story following the template
 6. **Validation** - Review against quality checklist
@@ -20,11 +20,11 @@ The test case generation process involves these key phases:
 ### Phase 1: Context Gathering
 
 **Objective:** Understand project context and requirements.
-- Clarify the project context and requienment are supplyed
-- If not, ask user prodive it
+- Clarify the project context and requirements are supplied
+- If not, ask user provide it
 - The `template--functional-test-case.md` and `checklist--functional-testcase.md` already have, but ask user if they want to override it. 
 - User can use command as `view the system template for functional test case` to view the `--functional-test-case.md` file 
-- User can user command as `view the system checklist for functional test case` to view `checklist--functional-testcase.md` file
+- User can use command as `view the system checklist for functional test case` to view `checklist--functional-testcase.md` file
 
 **What to Extract:**
 - Project name and code
@@ -39,7 +39,7 @@ The test case generation process involves these key phases:
 **Objective:** Ensure the user story summary file is available and readable.
 
 **Actions:**
-- Check user input the user story summary document, user can typying the content of user story or upload it
+- Check user input the user story summary document, user can typing the content of user story or upload it
 - If not found any related user story summary info, ask user for the correct info
 - Read and extract all user stories
 - Identify user story IDs, titles, and acceptance criteria
@@ -47,12 +47,12 @@ The test case generation process involves these key phases:
 **Output:** List of all user stories requiring test cases
 
 
-### Phase 3: Place of storage of Output Verification** 
+### Phase 3: Output Storage Configuration 
 
 **Objective:**
 
 **Actions:**
-- Ask user provide place to storage the Testcase that created based on User Stories
+- Ask user provide place to store the Test Cases that created based on User Stories
 - Storage can be:
   - Jira (Use jira mcp)
   - file systems
@@ -170,12 +170,12 @@ Present the generated test case with:
 
 ---
 
-### Phase 7: Store Testcase 
+### Phase 7: Store Test Case 
 **Save file**:
 - After user approval, you should save to file with name `{{us-id}}.md`
 
 
-### Phase 7: Iteration
+### Phase 8: Iteration
 
 **Objective:** Generate test cases for all user stories.
 
@@ -187,7 +187,7 @@ Present the generated test case with:
 
 ---
 
-### Phase 8: Final Reporting
+### Phase 9: Final Reporting
 
 **Objective:** Provide comprehensive summary of test case generation.
 
